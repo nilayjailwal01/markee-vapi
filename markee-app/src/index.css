@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: manrope;
+	src: url('fonts/manrope/Manrope-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: manrope;
+	src: url('fonts/manrope/Manrope-Bold.ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: manrope;
+	src: url('fonts/manrope/Manrope-SemiBold.ttf');
+	font-weight: 500;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: manrope;
+	src: url('fonts/manrope/Manrope-Light.ttf');
+	font-weight:300;
+	font-style: normal;
+} 
+
+@font-face {
+	font-family: manrope;
+	src: url('fonts/manrope/Manrope-ExtraLight.ttf');
+	font-weight: 100 200;
+	font-style: normal;
+} 
+
+:root {
+	--ecp-font-family: Manrope-Bold!important;
+	--ecp-header-height: 4em;
+	--ecp-sidebar-width: 14rem;
+	--ecp-accent: #4050b5; /* spectrum */
+}
+
+* {
+	min-width: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+body {
+  margin: 0;
+  font-family:  var(--ecp-font-family);
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+
+.radix-themes {
+  --default-font-family:  manrope !important;
+  --heading-font-family:  manrope !important;
+  --code-font-family:     manrope !important;
+  --strong-font-family:   manrope !important;
+  --em-font-family:       manrope !important;
+  --quote-font-family:    manrope !important;
+}

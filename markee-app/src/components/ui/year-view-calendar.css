@@ -1,0 +1,57 @@
+.YearViewCalendar {
+	.fc-timeline-events {
+		z-index: 5;
+	}
+
+	.fc-resource-timeline-divider {
+		width: 1px;
+	}
+
+	.fc-timeline-slot-label a {
+		color: #7e8299;
+		font-weight: 500;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.fc-timeline-lane-frame {
+		border-bottom: #e4e6ef solid 1px;
+		border-right: #e4e6ef solid 1px;
+	}
+
+	table,
+	tbody,
+	td,
+	th,
+	tr {
+		border: none !important;
+	}
+
+	&__resource-label {
+		color: #7e8299;
+		writing-mode: vertical-rl;
+		transform: rotate(180deg);
+		text-align: center;
+	}
+
+	&__resource-header {
+		display: none;
+	}
+
+	&__event {
+		--fc-event-text-color: #181c32;
+
+		border-color: rgb(228 230 239);
+		background-color: rgb(228 230 239);
+		overflow: hidden;
+		border-radius: 0.5rem;
+		height: 95px;
+		margin: 0.5rem;
+
+		&:hover {
+			z-index: 10;
+		}
+	}
+}
