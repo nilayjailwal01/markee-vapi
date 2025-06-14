@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: markee-app
+    env: static
+    buildCommand: npm run build:prod
+    staticPublishPath: ./build
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html 
