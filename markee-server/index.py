@@ -148,6 +148,10 @@ def main():
 app = Flask(__name__)
 CORS(app)
 
+# Port configuration for Render deployment
+port = int(os.environ.get('PORT', 3000))
+app.run(host='0.0.0.0', port=port)
+
 API_KEY = os.getenv('NVAPI_KEY')
 INVOKE_URL = "https://ai.api.nvidia.com/v1/genai/stabilityai/stable-diffusion-xl"
 
